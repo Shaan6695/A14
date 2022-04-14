@@ -8,7 +8,7 @@
 		d.setTime(d.getTime() + (exdays*24*60*60*1000));
 		var expires = "expires=" + d.toGMTString();
 		// you need the spage after each name/value pair
-		var myCookie = cname + "=" + cvalue + "; " + expires + "; 
+		var myCookie = cname + "=" + cvalue + "; " + expires + "; path=/";
 		document.write(' 3) The Value of myCookie is ' + myCookie+'<br/>');
 		document.cookie = myCookie;
 	}
